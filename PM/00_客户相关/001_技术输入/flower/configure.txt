@@ -1,0 +1,4 @@
+<sn> : EMLDJNH0018010001</sn>
+<name> : flower001</name>
+<maxhumidity> : 80</maxhumidity>
+<minhumidity> : 20</minhumidity>

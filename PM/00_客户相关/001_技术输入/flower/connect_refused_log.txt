@@ -1,0 +1,24 @@
+Connected with m13.cloudmqtt.com
+2018-06-21 11:21:20 MQTT:PUB FlowerBuddy/JNH/DEV/EMLDJNH0018010001/DeviceInfo fl                                                                             ower001;27.1;66.6;19.29;95.0;28.35;True;True;True;
+Traceback (most recent call last):
+  File "vflower.py", line 270, in <module>
+    device_api.auto_water()
+  File "vflower.py", line 156, in auto_water
+    self.once_water()
+  File "vflower.py", line 171, in once_water
+    self.send_heart()
+  File "vflower.py", line 110, in send_heart
+    self.mqtt_send(topic,msg)
+  File "vflower.py", line 98, in mqtt_send
+    mqtt_api.send(topic,payload)
+  File "vflower.py", line 193, in send
+    CLIENT.connect(self.host, self.port, 120)
+  File "/usr/local/lib/python3.5/dist-packages/paho_mqtt-1.3.1-py3.5.egg/paho/mq                                                                             tt/client.py", line 768, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.5/dist-packages/paho_mqtt-1.3.1-py3.5.egg/paho/mq                                                                             tt/client.py", line 895, in reconnect
+    sock = socket.create_connection((self._host, self._port), source_address=(se                                                                             lf._bind_address, 0))
+  File "/usr/lib/python3.5/socket.py", line 712, in create_connection
+    raise err
+  File "/usr/lib/python3.5/socket.py", line 703, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
